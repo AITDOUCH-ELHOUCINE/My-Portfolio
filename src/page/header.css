@@ -96,9 +96,12 @@
         
     } */
 
-    /* .contact {
-        display: none;
-    } */
+    .contact {
+       margin-left: 30rem;
+       display: flex;
+ flex-direction: column;
+ gap: 0;
+    }
 
     .sun {
         font-size: 20px;
@@ -120,6 +123,9 @@
 }
 @media (max-width: 480px) {
 
+    .contact {
+        margin-left: 0;
+     }
     .icon-head {
         display: block;
     
