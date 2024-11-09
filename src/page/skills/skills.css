@@ -1,0 +1,141 @@
+/* Skills Section */
+.skills-section {
+    height: 70vh;
+    text-align: center;
+    color: #fff;
+    padding: 3rem 0;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Skills Section Title */
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 50px;
+}
+
+/* Skills Grid Layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 2rem;
+}
+
+/* Skill Card */
+.skill-card {
+    background-color: #18181B;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    height: 5rem;
+}
+
+/* Skill Detail Section */
+.detaill {
+    text-align: start;
+    margin-left: 10px;
+}
+
+/* Skill Title */
+.detaill h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Skill Description */
+.detaill p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #575758;
+    margin: 0;
+}
+
+/* Hover Effect for Skill Card */
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+/* Skill Icon */
+.skill-card .icon {
+    font-size: 36px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    /* Adjust skills grid to 2 columns for tablets */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row */
+        gap: 20px; /* Adjust gap for better spacing */
+        padding: 0 1rem; /* Slightly reduced padding */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust skills grid to 2 columns for larger phones/tablets */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Still 2 cards per row */
+        gap: 15px; /* Reduce gap for smaller devices */
+        padding: 0 1rem; /* Reduced padding */
+    }
+
+    /* Adjust title font size for smaller screens */
+    .skills-section h2 {
+        font-size: 1.5rem; /* Smaller font for mobile */
+        margin-bottom: 1.5rem;
+    }
+
+    /* Adjust card size */
+    .skill-card {
+        height: 4.5rem; /* Adjust height for mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust skills grid to a single column for very small screens */
+    .skill-description{
+        display: none;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Stack cards in 1 column */
+        gap: 10px; /* Minimal gap between cards */
+        padding: 0.5rem; /* Minimal padding */
+    }
+
+    /* Further reduce title font size */
+    .skills-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Further reduce skill card padding */
+    .skill-card {
+        padding: 5px 10px;
+        height: 4rem; /* Reduced height */
+    }
+
+    /* Adjust font sizes for details */
+    .detaill h3 {
+        font-size: 0.9rem;
+    }
+
+    .detaill p {
+        font-size: 0.75rem;
+    }
+
+    /* Reduce icon size */
+    .skill-card .icon {
+        font-size: 24px;
+    }
+}

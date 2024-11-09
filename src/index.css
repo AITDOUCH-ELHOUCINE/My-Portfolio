@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+  --body-color:#09090b;
+  --color1:#18181B;
+  --color2:#575758;
+  --color3:#3D3D3D; 
+  --color4:#3E7FA5;
+  --color5:#57B1B4;
+  --color6:#83CD29;
+  --color7:#DD6E42;
+  --color8:#B52929;
+  --color9:#3E7FA5;
+  --color10:#faf25b;
+  --color11:#7F2FFA;
+  --color12:#726D6D;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.lightMode ,
+.lightMode h2 {
+  background-color: #e4e5f1;
+  color: #09090b; 
+}
+
+.darkMode {
+  background-color: var(--body-color); 
+  color: var(--color10); 
+}
+body {
+
+  font-family:Gabarito, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+
+*{
+  text-decoration: none;
+  list-style: none;
+
+}
